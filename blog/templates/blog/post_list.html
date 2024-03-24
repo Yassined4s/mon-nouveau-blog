@@ -6,8 +6,8 @@
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-
     </head>
+
     <body>
         <header class = "page-header">
         <div class="container"></div>
@@ -19,21 +19,17 @@
             <h1><a href="/">Santé et alimentation</a></h1>
         </header>
 
-        <main class="container">
-            <div class="row">
-                <div class="col">
-                    {% for post in posts %}
-                        <article class="post">
-                            <time class="date">
-                                {{ post.published_date }}
-                            </time>
-                            <h2><a href="">{{ post.title }}</a></h2>
-                            <p>{{ post.text|linebreaksbr }}</p>
-                        </article>
-                    {% endfor %}
-                </div>
-            </div>
-        </main>
+        <article>
+            <time>publication: 23.03.2024, 18:34</time>
+            <h2><a href="">L'alimentation: un pilier de la santé</a></h2>
+            <p>Une alimentation équilibrée est la clé de voûte d'une vie saine. Elle fournit les nutriments essentiels qui sont nécessaires au bon fonctionnement de notre corps et à son entretien. Les vitamines, minéraux, lipides, glucides, et protéines jouent chacun un rôle spécifique et vital. Par exemple, les protéines réparent et construisent les tissus, tandis que les glucides fournissent l'énergie nécessaire pour nos activités quotidiennes. Les légumes et les fruits, riches en vitamines et en minéraux, soutiennent le système immunitaire et participent à la prévention de nombreuses maladies. Ainsi, une alimentation variée et colorée n'est pas seulement un plaisir pour les yeux, mais aussi une nécessité pour le corps, aidant à maintenir un poids sain, à renforcer l'immunité et à prévenir des maladies chroniques telles que les maladies cardiaques, le diabète et certains cancers.</p>
+        </article>
 
+        <article>
+            <time>publication: 23.03.2024, 18:36</time>
+            <h2><a href="">Le rôle de l'activité physique dans la gestion de l'alimentation et de la santé</a></h2>
+            <p>L'activité physique est l'autre grand pilier d'une vie saine, agissant en complément d'une bonne alimentation. L'exercice régulier aide à brûler les calories ingérées, contribuant ainsi à la gestion du poids et à la prévention de l'obésité. De plus, l'activité physique stimule la circulation sanguine, améliore la santé cardiovasculaire et augmente la sensibilité à l'insuline. Elle a également un effet positif sur l'humeur, grâce à la libération d'endorphines, souvent appelées hormones du bonheur. Il est recommandé de pratiquer au moins 150 minutes d'activité physique modérée par semaine pour en tirer les bénéfices. La clé est de trouver une activité que l'on apprécie, qu'il s'agisse de marche, de natation, de vélo, ou même de danse, pour s'assurer une pratique régulière. Combinée à une alimentation équilibrée, l'activité physique contribue à établir une fondation solide pour une vie saine et heureuse.</p>
+        </article>
+        
     </body>
 </html>
